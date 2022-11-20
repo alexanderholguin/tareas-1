@@ -1,32 +1,20 @@
-﻿/* nombre: jonathanholguinbaque 3 A */
-internal class NewBaseType
+﻿/* jonathan holguin baque 3ero A  */
+
+class Program
 {
     static void Main(string[] args)
     {
-        double n1;
-        double n2;
-        Console.WriteLine("numero uno;");
-        n1 = Convert.ToDouble(Console.ReadLine());
-
-        Console.WriteLine("numero dos:");
-        n2 = Convert.ToDouble(Console.ReadLine());
-
-        if (n1 > n2)
+        //determinar si un numero es par 
+        Console.Write("introducir el primer numero: ");
+        double numero = Convert.ToDouble(Console.ReadLine());
+        if(numero % 2 == 0)
         {
-            Console.WriteLine("el numero" + n1 + "es el mayor");
-        }
-        else if (n1 < n2)
-        {
-            Console.WriteLine("el numeros " + n2 + "es el mayor");
+            Console.Write("el numero" + numero + "es par.");
         }
         else
         {
-            Console.WriteLine("los numeros son iguales.");
+            Console.Write("el numero " + numero + " es impar.");
         }
         Console.ReadLine();
     }
-}
-
-class Program : NewBaseType
-{
 }
