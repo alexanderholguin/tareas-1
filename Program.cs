@@ -1,19 +1,24 @@
 ﻿/* JONATHAN HOLGUIN BAQUE 3er A     */
 class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        Console.Write("digite un numero:");
-        float nota1 = float.Parse(Console.ReadLine());
-        Console.Write("digite un numero:");
-        float nota2 = float.Parse(Console.ReadLine());
-        Console.Write("digite un numero:");
-        float nota3 = float.Parse(Console.ReadLine());
-        Console.Write("digite un numero:");
-        float nota4 = float.Parse(Console.ReadLine());
-
-        float media= (nota1+ nota2 + nota3 + nota4) / 4;
-        Console.WriteLine($"la media aritmetica es:{media}") ;
-        Console.ReadLine();
+        int n, cont , fact;
+        Console.WriteLine("digite el valor de n!: ");
+        n = Convert.ToInt32(Console.ReadLine());
+        if (n == 0)
+        {
+            Console.WriteLine("el factorial de {0} es 1" , n);
+        }
+        else
+        {
+            fact = n;
+            for (cont = n; cont > 1; cont--)
+            {
+                fact = fact * (cont -1);
+            }
+            Console.WriteLine("el factorial de {0} es: {1}" , n , fact );
+        }
+        Console.ReadKey();
     }
 }
