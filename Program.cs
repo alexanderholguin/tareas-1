@@ -1,14 +1,19 @@
 ﻿/* JONATHAN HOLGUIN BAQUE 3er A     */
-int i = 1; int c = 0;
-Console.Write("ingresar un numero: ");
-int n = int.Parse(Console.ReadLine());
-while(i <= n)
+class Program
 {
-    if(i % 3 == 0)
+    static void Main(string[] args)
     {
-        c = c + 1;
+        Console.Write("digite un numero:");
+        float nota1 = float.Parse(Console.ReadLine());
+        Console.Write("digite un numero:");
+        float nota2 = float.Parse(Console.ReadLine());
+        Console.Write("digite un numero:");
+        float nota3 = float.Parse(Console.ReadLine());
+        Console.Write("digite un numero:");
+        float nota4 = float.Parse(Console.ReadLine());
+
+        float media= (nota1+ nota2 + nota3 + nota4) / 4;
+        Console.WriteLine($"la media aritmetica es:{media}") ;
+        Console.ReadLine();
     }
-    i = i + 1;
 }
-Console.Write($"la cantidad de numeros multiplos de 3 son: {c} " );
-Console.ReadKey();
