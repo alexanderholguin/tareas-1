@@ -1,28 +1,14 @@
-﻿/* nombre: fernanjps3A       */
-class Program
+﻿/* JONATHAN HOLGUIN BAQUE 3er A     */
+int i = 1; int c = 0;
+Console.Write("ingresar un numero: ");
+int n = int.Parse(Console.ReadLine());
+while(i <= n)
 {
-    static void Main(string[] args)
+    if(i % 3 == 0)
     {
-        double n1, n2, n3;
-        Console.WriteLine("primer lado:");
-        n1 = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine("segundo lado:");
-        n2 = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine("tercer lado:");
-        n3 = Convert.ToDouble(Console.ReadLine());
-        if (n1 == n2 && n1==n3)
-            Console.WriteLine("es equilatero");
-        else    
-        {
-            if (n1== n2 ||n1 ==n3 || n3==n2)
-                Console.WriteLine("es isosceles");
-            else
-            {
-                if (n1 != n2 || n2!=n3 || n3 != n1)
-                    Console.WriteLine("es escaleno");
-            }    
-        }
-        Console.Read();
-
+        c = c + 1;
     }
+    i = i + 1;
 }
+Console.Write($"la cantidad de numeros multiplos de 3 son: {c} " );
+Console.ReadKey();
