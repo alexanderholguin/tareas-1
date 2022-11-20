@@ -1,18 +1,21 @@
-﻿internal class NewBaseType
+﻿
+ /* jonathan holguin baque 3er A */
+internal class NewBaseType
 {
     static void Main(string[] args)
     {
-        int num = 0;
-        int suma = 0;
-
-        do
+        Int32 num;
+        Int32 suma = 0;
+        int i;
+        for (i = 1; i <= 8; i++)
         {
-            Console.WriteLine("ingresar un numero:");
-            num = int.Parse(Console.ReadLine());
+            Console.WriteLine("introduce un numero entero:");
+            num = Int32.Parse(Console.ReadLine());
             suma = suma + num;
-        } while (num != 0);
+        }
         Console.WriteLine("la suma es:" + suma);
         Console.ReadKey();
+
     }
 }
 
