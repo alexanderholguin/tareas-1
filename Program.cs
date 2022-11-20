@@ -1,24 +1,28 @@
-﻿/* JONATHAN HOLGUIN BAQUE 3er A     */
+﻿/* jonathan holguin baque 3er A  */
 class Program
 {
-    public static void Main(string[] args)
+    static void Main(string[] args)
     {
-        int n, cont , fact;
-        Console.WriteLine("digite el valor de n!: ");
-        n = Convert.ToInt32(Console.ReadLine());
-        if (n == 0)
+        double n1, n2, n3;
+        Console.WriteLine("primer lado:");
+        n1 = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("segundo lado:");
+        n2 = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("tercer lado:");
+        n3 = Convert.ToDouble(Console.ReadLine());
+        if (n1 == n2 && n1==n3)
+            Console.WriteLine("es equilatero");
+        else    
         {
-            Console.WriteLine("el factorial de {0} es 1" , n);
-        }
-        else
-        {
-            fact = n;
-            for (cont = n; cont > 1; cont--)
+            if (n1== n2 ||n1 ==n3 || n3==n2)
+                Console.WriteLine("es isosceles");
+            else
             {
-                fact = fact * (cont -1);
-            }
-            Console.WriteLine("el factorial de {0} es: {1}" , n , fact );
+                if (n1 != n2 || n2!=n3 || n3 != n1)
+                    Console.WriteLine("es escaleno");
+            }    
         }
-        Console.ReadKey();
+        Console.Read();
+
     }
 }
