@@ -1,28 +1,15 @@
-﻿/* jonathan holguin baque 3er A  */
+﻿
 class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        double n1, n2, n3;
-        Console.WriteLine("primer lado:");
-        n1 = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine("segundo lado:");
-        n2 = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine("tercer lado:");
-        n3 = Convert.ToDouble(Console.ReadLine());
-        if (n1 == n2 && n1==n3)
-            Console.WriteLine("es equilatero");
-        else    
-        {
-            if (n1== n2 ||n1 ==n3 || n3==n2)
-                Console.WriteLine("es isosceles");
-            else
-            {
-                if (n1 != n2 || n2!=n3 || n3 != n1)
-                    Console.WriteLine("es escaleno");
-            }    
-        }
-        Console.Read();
-
+        Empleados empleados = new Empleados("Bar de comida", 2022, "jonathan", "holguin", 1, "Soltero");
+        empleados.imprimir();
+        Estudiantes estudiante = new Estudiantes("A340", "sebastian", "Gonzales", 2, "Soltero");
+        estudiante.imprimir();
+        Personal personal = new Personal("Secretaria", "Diana", "Tigua", 4, "Casada");
+        personal.imprimir();
+        Profesores profesores = new Profesores("ingeniero", "Joaquin", "baque ", 5, "viudo");
+        profesores.imprimir();
     }
 }
